@@ -3,26 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ses Algılayıcı</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> <!-- icon eklecem -->
+
+
+    <title>Hesap Makinesi</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
- 
-    
-    <input type="text" id="algilananMetin" placeholder="Sesli ifadeyi buraya girin">
+    <div class="calculator">
+        <input type="text" id="algilananMetin" placeholder="Sesli ifadeyi buraya girin">
+        
+        <div class="button-container">
+            
+            <button id="baslaButon" class="calc-button"><i class="fas fa-microphone" style="color: red;"></i></button>
 
-    <button id="baslaButon">Başlat</button>
-    <button id="durButon" disabled>ekle yakında eklencek</button>
-
-
-<button id="hesaplaButon">Hesapla</button>
-    <p id="sonuc"></p>
-   
+            <button id="islemekle" class="calc-button" style="color: darkblue;" >İşlem Ekle <i class="fas fa-plus" style="color: darkblue;"></i></button>
+            <button id="hesaplaButon" class="calc-button">Hesapla</button>
+        </div>
+        
+        <p id="sonuc"></p>
+    </div>
 
     <script src="func.js"></script>
-     <script src="hesapla.js"></script>
+    <script src="islemekle.js"></script>
+    <script src="hesapla.js"></script>
 </body>
 </html>
-<---- ayrı --->
-başlat dediğinde eğer ses izinlerini verdisen sesini dinlemeye başlacak mesela 4+2 de sonra dur de ve hesapla de
-sonra 4 çarpı 2 +3 -1 de mesela dur  de ve hesapla de
-
