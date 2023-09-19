@@ -36,3 +36,4 @@ recognition.onresult = function(event) {
 
 
 });
+//deneme123:)
