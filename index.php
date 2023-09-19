@@ -11,7 +11,7 @@
     <input type="text" id="algilananMetin" placeholder="Sesli ifadeyi buraya girin">
 
     <button id="baslaButon">Başlat</button>
-    <button id="durButon" disabled>Durdur</button>
+    <button id="durButon" disabled>ekle yakında eklencek</button>
 
 
 <button id="hesaplaButon">Hesapla</button>
