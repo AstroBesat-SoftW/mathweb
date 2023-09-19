@@ -2,6 +2,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const sesAlgilamaButon = document.getElementById('sesAlgilamaButon');
     const algilananMetin = document.getElementById('algilananMetin');
     const baslaButon = document.getElementById('baslaButon');
+    const islemekle= document.getElementById('islemekle');
     //const durButon = document.getElementById('durButon');
     let recognition; // Recognition nesnesini global olarak tanımlayın
 
@@ -20,14 +21,16 @@ recognition.onresult = function(event) {
     
 
         recognition.start(); // Algılamayı Başlat
-        if (baslaButon.textContent === "Başlat") {
-            baslaButon.textContent = "Durdur";
+      //  if (baslaButon.textContent === "Başlat") {
+        //    baslaButon.textContent = "Durdur";
             // Durdur adını veriyorum
-        } else {
-            baslaButon.textContent = "Başlat";
-              recognition.stop(); // Algılamayı Durdur
+        //} else {
+          //  baslaButon.textContent = "Başlat";
+            //  recognition.stop(); // Algılamayı Durdur
             // Başlat ismini veriyorum
-        }
+        //}
+        //baslaButon.disabled = false;
+
 
 
 
@@ -36,4 +39,4 @@ recognition.onresult = function(event) {
 
 
 });
-//deneme123:)
+//deneme12345678:)
