@@ -16,9 +16,9 @@
         <div class="button-container">
             
             <button id="baslaButon" class="calc-button"><i class="fas fa-microphone" style="color: red;"></i></button>
-
-            <button id="islemekle" class="calc-button" style="color: darkblue;" >İşlem Ekle <i class="fas fa-plus" style="color: darkblue;"></i></button>
+            <button id="islemekle" class="calc-button" style="color: white;" >İşlem Ekle <i class="fas fa-plus" style="color: white;"></i></button>
             <button id="hesaplaButon" class="calc-button">Hesapla</button>
+            <button id="silButon" class="calc-button"><i class="fas fa-trash" style="color: black;"></i></button>
         </div>
         
         <p id="sonuc"></p>
@@ -27,5 +27,7 @@
     <script src="func.js"></script>
     <script src="islemekle.js"></script>
     <script src="hesapla.js"></script>
+    <script src="sil.js"></script>
 </body>
 </html>
+
