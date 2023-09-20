@@ -1,0 +1,1 @@
+gorsel kısmı
