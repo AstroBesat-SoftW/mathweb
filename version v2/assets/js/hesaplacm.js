@@ -164,10 +164,57 @@
         else if (birim2 === 'santimetre' && birim1 === 'milimetre') {
             sonucDegeri = sayi / 10 // Kilometreyi metreye çevir
         }
+
+
+          
+    // Sıvı ölçü birimleri ile ilgili dönüşümler
+    if (birim1 === 'litre' && birim2 === 'mililitre') {
+        sonucDegeri = sayi * 1000; // Litreyi mililitreye çevir
+    } 
+    else if (birim1 === 'mililitre' && birim2 === 'litre') {
+        sonucDegeri = sayi / 1000; // Mililitreyi litreye çevir
+    }
+    else if (birim1 === 'kilolitre' && birim2 === 'litre') {
+        sonucDegeri = sayi * 1000; // Kilolitreyi litreye çevir
+    } 
+    else if (birim1 === 'litre' && birim2 === 'kilolitre') {
+        sonucDegeri = sayi / 1000; // Litreyi kilolitreye çevir
+    }
+    else if (birim1 === 'hektolitre' && birim2 === 'litre') {
+        sonucDegeri = sayi * 100; // Hektolitreyi litreye çevir
+    } 
+    else if (birim1 === 'litre' && birim2 === 'hektolitre') {
+        sonucDegeri = sayi / 100; // Litreyi hektolitreye çevir
+    }
+    else if (birim1 === 'dekalitre' && birim2 === 'litre') {
+        sonucDegeri = sayi * 10; // Dekalitreyi litreye çevir
+    } 
+    else if (birim1 === 'litre' && birim2 === 'dekalitre') {
+        sonucDegeri = sayi / 10; // Litreyi dekalitreye çevir
+    }
+    else if (birim1 === 'desilitre' && birim2 === 'litre') {
+        sonucDegeri = sayi / 10; // Desilitreyi litreye çevir
+    } 
+    else if (birim1 === 'litre' && birim2 === 'desilitre') {
+        sonucDegeri = sayi * 10; // Litreyi desilitreye çevir
+    }
+    else if (birim1 === 'santilitre' && birim2 === 'litre') {
+        sonucDegeri = sayi / 100; // Santilitreyi litreye çevir
+    } 
+    else if (birim1 === 'litre' && birim2 === 'santilitre') {
+        sonucDegeri = sayi * 100; // Litreyi santilitreye çevir
+    }
+    else if (birim1 === 'mililitre' && birim2 === 'santilitre') {
+        sonucDegeri = sayi * 10; // Mililitreyi santilitreye çevir
+    } 
+    else if (birim1 === 'santilitre' && birim2 === 'mililitre') {
+        sonucDegeri = sayi / 10; // Santilitreyi mililitreye çevir
+    }
+
         
         else {
             
-            throw new Error('Geçersiz birimler. Desteklenen birimler: metre, kilometre, santimetre, desimetre, milimetre, hektometre, dekametre');
+            throw new Error('Geçersiz birimler. Desteklenen birimler: metre, kilometre, santimetre, desimetre, milimetre, hektometre, dekametrelitre, mililitre, kilolitre, hektolitre, dekalitre, desilitre, santilitre');
         }
         
         return sonucDegeri;
