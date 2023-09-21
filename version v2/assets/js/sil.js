@@ -1,8 +1,8 @@
 document.addEventListener('DOMContentLoaded', function() {
     const algilananMetin = document.getElementById('algilananMetin');
     const silButon = document.getElementById('silButon');
-    const algilananMetincm = document.getElementById('algilananMetincs');
-    const silButoncm = document.getElementById('silButoncs');
+    const algilananMetincm = document.getElementById('algilananMetincm');
+    const silButoncm = document.getElementById('silButoncm');
     const ifade="Sesli ifadeyi buraya girin";
 
     // Başlat Butonuna Tıklama Olayını Ekle
