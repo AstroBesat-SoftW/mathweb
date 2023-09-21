@@ -1,6 +1,8 @@
 document.addEventListener('DOMContentLoaded', function() {
     const algilananMetin = document.getElementById('algilananMetin');
     const silButon = document.getElementById('silButon');
+    const algilananMetincm = document.getElementById('algilananMetincs');
+    const silButoncm = document.getElementById('silButoncs');
     const ifade="Sesli ifadeyi buraya girin";
 
     // Başlat Butonuna Tıklama Olayını Ekle
@@ -14,5 +16,18 @@ document.addEventListener('DOMContentLoaded', function() {
             algilananMetin.value='';
         }
         
-    });      
+    }); 
+ // Başlat Butonuna Tıklama Olayını Ekle cm
+    silButoncm.addEventListener('click', function() {
+     
+
+        if(algilananMetincm.value===ifade){
+            
+        }
+        else{
+            algilananMetincm.value='';
+        }
+        
+    });
+    
     });
