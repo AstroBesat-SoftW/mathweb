@@ -38,7 +38,62 @@ body {
   overflow-x: hidden; }
 
 
+/* bu alt ses ile ilgili */
+#algilananMetincm {
+    width: 90%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
 
+
+
+
+
+
+
+.calculator {
+    background-color: #fff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.calc-button {
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.calc-button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+.button-container {
+    margin-top: 10px;
+}
+
+#algilananMetin {
+    width: 90%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+
+/* bu üst ses ile ilgili */
 
 * {
   margin: 0;
