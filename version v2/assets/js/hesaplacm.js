@@ -214,7 +214,7 @@
         
         else {
             
-            throw new Error('Geçersiz birimler. Desteklenen birimler: metre, kilometre, santimetre, desimetre, milimetre, hektometre, dekametrelitre, mililitre, kilolitre, hektolitre, dekalitre, desilitre, santilitre');
+            throw new Error('Geçersiz birimler. Desteklenen birimler: metre, kilometre, santimetre, desimetre, milimetre, hektometre, dekametrelitre, mililitre, litre, kilolitre, hektolitre, dekalitre, desilitre, santilitre');
         }
         
         return sonucDegeri;
