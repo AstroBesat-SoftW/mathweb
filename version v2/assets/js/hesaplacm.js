@@ -226,6 +226,9 @@
             const sonucDegeri = hesaplaBirimDonusumu(ifade);
             sonuc.textContent = `Sonuç: ${sonucDegeri}`;
             sonucDiv.style.display = 'block';
+          const a=window.speechSynthesis;
+            const b=new SpeechSynthesisUtterance(`Sonuç: ${sonucDegeri}`);
+            a.speak(b);
         } catch (error) {
             sonuc.textContent = `Hata: ${error.message}`;
             sonucDiv.style.display = 'block';
