@@ -22,11 +22,151 @@
         
         // Burada birim dönüşümünü yapın
         // Örnek birim dönüşümü:
-        if (birim1 === 'metre' && birim2 === 'kilometre') {
-            sonucDegeri = sayi / 1000; // Metreyi kilometreye çevir
-        } else if (birim1 === 'kilometre' && birim2 === 'metre') {
+        if (birim1 === 'kilometre' && birim2 === 'hektometre') {
+            sonucDegeri = sayi * 10; // Metreyi kilometreye çevir
+        } else if (birim1 === 'kilometre' && birim2 === 'dekametre') {
+            sonucDegeri = sayi * 100; // Kilometreyi metreye çevir
+        }
+        else if (birim1 === 'kilometre' && birim2 === 'metre') {
             sonucDegeri = sayi * 1000; // Kilometreyi metreye çevir
-        } else {
+        }
+        else if (birim1 === 'kilometre' && birim2 === 'desimetre') {
+            sonucDegeri = sayi * 10000; // Kilometreyi metreye çevir
+        }
+        else if (birim1 === 'kilometre' && birim2 === 'santimetre') {
+            sonucDegeri = sayi * 100000; // Kilometreyi metreye çevir
+        } 
+        else if (birim1 === 'kilometre' && birim2 === 'milimetre') {
+            sonucDegeri = sayi * 1000000; // Kilometreyi metreye çevir
+        }
+        else if (birim2 === 'kilometre' && birim1 === 'hektometre') {
+            sonucDegeri = sayi / 10; // Metreyi kilometreye çevir
+        } 
+        else if (birim2 === 'kilometre' && birim1 === 'dekametre') {
+            sonucDegeri = sayi / 100; // Kilometreyi metreye çevir
+        }
+        else if (birim2 === 'kilometre' && birim1 === 'metre') {
+            sonucDegeri = sayi / 1000; // Kilometreyi metreye çevir
+        }
+        else if (birim2 === 'kilometre' && birim1 === 'desimetre') {
+            sonucDegeri = sayi / 10000; // Kilometreyi metreye çevir
+        }
+        else if (birim2 === 'kilometre' && birim1 === 'santimetre') {
+            sonucDegeri = sayi / 100000; // Kilometreyi metreye çevir
+        } 
+        else if (birim2 === 'kilometre' && birim1 === 'milimetre') {
+            sonucDegeri = sayi / 1000000; // Kilometreyi metreye çevir
+        }
+
+
+        else if (birim1 === 'hektometre' && birim2 === 'dekametre') {
+            sonucDegeri = sayi*10; // Kilometreyi metreye çevir
+        }
+        else if (birim1 === 'hektometre' && birim2 === 'metre') {
+            sonucDegeri = sayi * 100; // Kilometreyi metreye çevir
+        }
+        else if (birim1 === 'hektometre' && birim2 === 'desimetre') {
+            sonucDegeri = sayi * 1000; // Kilometreyi metreye çevir
+        }
+        else if (birim1 === 'hektometre' && birim2 === 'santimetre') {
+            sonucDegeri = sayi * 10000; // Kilometreyi metreye çevir
+        } 
+        else if (birim1 === 'hektometre' && birim2 === 'milimetre') {
+            sonucDegeri = sayi * 100000; // Kilometreyi metreye çevir
+        }
+       
+        else if (birim2 === 'hektometre' && birim1 === 'dekametre') {
+            sonucDegeri = sayi / 10; // Kilometreyi metreye çevir
+        }
+        else if (birim2 === 'hektometre' && birim1 === 'metre') {
+            sonucDegeri = sayi / 100; // Kilometreyi metreye çevir
+        }
+        else if (birim2 === 'hektometre' && birim1 === 'desimetre') {
+            sonucDegeri = sayi / 1000; // Kilometreyi metreye çevir
+        }
+        else if (birim2 === 'hektometre' && birim1 === 'santimetre') {
+            sonucDegeri = sayi / 10000; // Kilometreyi metreye çevir
+        } 
+        else if (birim2 === 'hektometre' && birim1 === 'milimetre') {
+            sonucDegeri = sayi / 100000; // Kilometreyi metreye çevir
+        }
+
+    
+        
+        else if (birim1 === 'dekametre' && birim2 === 'metre') {
+            sonucDegeri = sayi * 10; // Kilometreyi metreye çevir
+        }
+        else if (birim1 === 'dekametre' && birim2 === 'desimetre') {
+            sonucDegeri = sayi * 100; // Kilometreyi metreye çevir
+        }
+        else if (birim1 === 'dekametre' && birim2 === 'santimetre') {
+            sonucDegeri = sayi * 1000; // Kilometreyi metreye çevir
+        } 
+        else if (birim1 === 'dekametre' && birim2 === 'milimetre') {
+            sonucDegeri = sayi * 10000; // Kilometreyi metreye çevir
+        }
+       
+        else if (birim2 === 'dekametre' && birim1 === 'metre') {
+            sonucDegeri = sayi / 10; // Kilometreyi metreye çevir
+        }
+        else if (birim2 === 'dekametre' && birim1 === 'desimetre') {
+            sonucDegeri = sayi / 100; // Kilometreyi metreye çevir
+        }
+        else if (birim2 === 'dekametre' && birim1 === 'santimetre') {
+            sonucDegeri = sayi / 1000; // Kilometreyi metreye çevir
+        } 
+        else if (birim2 === 'dekametre' && birim1 === 'milimetre') {
+            sonucDegeri = sayi / 10000; // Kilometreyi metreye çevir
+        }
+
+        
+        else if (birim1 === 'metre' && birim2 === 'desimetre') {
+            sonucDegeri = sayi * 10; // Kilometreyi metreye çevir
+        }
+        else if (birim1 === 'metre' && birim2 === 'santimetre') {
+            sonucDegeri = sayi * 100; // Kilometreyi metreye çevir
+        } 
+        else if (birim1 === 'metre' && birim2 === 'milimetre') {
+            sonucDegeri = sayi * 1000; // Kilometreyi metreye çevir
+        }
+       
+        
+        else if (birim2 === 'metre' && birim1 === 'desimetre') {
+            sonucDegeri = sayi / 10; // Kilometreyi metreye çevir
+        }
+        else if (birim2 === 'metre' && birim1 === 'santimetre') {
+            sonucDegeri = sayi / 100; // Kilometreyi metreye çevir
+        } 
+        else if (birim2 === 'metre' && birim1 === 'milimetre') {
+            sonucDegeri = sayi / 1000;// Kilometreyi metreye çevir
+        }
+        
+
+    
+        else if (birim1 === 'desimetre' && birim2 === 'santimetre') {
+            sonucDegeri = sayi * 10; // Kilometreyi metreye çevir
+        } 
+        else if (birim1 === 'desimetre' && birim2 === 'milimetre') {
+            sonucDegeri = sayi * 100; // Kilometreyi metreye çevir
+        }
+       
+        else if (birim2 === 'desimetre' && birim1 === 'santimetre') {
+            sonucDegeri = sayi / 10; // Kilometreyi metreye çevir
+        } 
+        else if (birim2 === 'desimetre' && birim1 === 'milimetre') {
+            sonucDegeri = sayi / 100; // Kilometreyi metreye çevir
+        }
+
+        else if (birim1 === 'santimetre' && birim2 === 'milimetre') {
+            sonucDegeri = sayi * 10; // Kilometreyi metreye çevir
+        }
+       
+        else if (birim2 === 'santimetre' && birim1 === 'milimetre') {
+            sonucDegeri = sayi / 10 // Kilometreyi metreye çevir
+        }
+        
+        else {
+            
             throw new Error('Geçersiz birimler. Desteklenen birimler: metre, kilometre');
         }
         
