@@ -222,12 +222,17 @@
     
     document.getElementById('hesaplaButoncm').addEventListener('click', function() {
         try {
+
             const ifade = algilananMetin.value;
+             const ifadeParcalari = ifade.split(' '); // Boşluklara göre ifadeyi bölelim
+             const sayi = parseFloat(ifadeParcalari[0]); // Sayıyı alın
+            const birim1 = ifadeParcalari[1].toLowerCase(); // İlk birimi alın
+            const birim2 = ifadeParcalari[2].toLowerCase(); // İkinci birimi alın
             const sonucDegeri = hesaplaBirimDonusumu(ifade);
-            sonuc.textContent = `Sonuç: ${sonucDegeri}`;
+            sonuc.textContent = `Sonuç:  ${sayi} ${birim1} den dönüştürüğümüzde ${sonucDegeri} ${birim2}`;
             sonucDiv.style.display = 'block';
           const a=window.speechSynthesis;
-            const b=new SpeechSynthesisUtterance(`Sonuç: ${sonucDegeri}`);
+            const b=new SpeechSynthesisUtterance(`Sonuç:  ${sayi} ${birim1} den dönüştürüğümüzde ${sonucDegeri} ${birim2} olur`);
             a.speak(b);
         } catch (error) {
             sonuc.textContent = `Hata: ${error.message}`;
