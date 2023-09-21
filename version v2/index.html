@@ -39,7 +39,7 @@
     
     <!--====== Style CSS ======-->
     <link rel="stylesheet" href="assets/css/style.css">
-      <link rel="stylesheet" href="style.css"> <!-- bizim css -->
+    
 </head>
 
 <body>
@@ -222,11 +222,39 @@
                     <div class="about-content mt-50 wow fadeInLeftBig" data-wow-duration="1s" data-wow-delay="0.5s">
                         <div class="section-title">
                             <div class="line"></div>
-                            <h3 class="title">Quick & Easy <span>to Use Bootstrap Template</span></h3>
+                            <h3 class="title">Dönüşümler <span>Nereden nereye dönüştürmek istersin?</span></h3>
                         </div> <!-- section title -->
-                        <p class="text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, seiam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing.</p>
-                        <a href="#" class="main-btn">Try it Free</a>
-                    </div> <!-- about content -->
+                        <p class="text">
+                            Yapmanız gerekenler <hr>
+                            1) ilk neyi dönüştürmek istediğinizi söylemeniz. <br>
+                            2) Nereden dönüştürmek istediğinizi söylemeniz<br>
+                            3) Neye dönüştürmek istediğinizi söylemeniz<br>
+                            <strong>Örn:</strong><br>
+                            "4 Metre Kilometre"<br>
+
+                            Bu metreden --> Kilometreye çevir demektir.
+                            <br> Cevap: 0.004 Olur.
+
+                        </p><br>
+                       
+
+
+                         <div class="calculator">
+        <input type="text" id="algilananMetincm" placeholder="Sesli ifadeyi buraya girin">
+    
+        <div class="button-container">
+            <button id="baslaButoncm" class="calc-button"><i class="fas fa-microphone" style="color: red;"></i></button>
+            
+            <button id="hesaplaButoncm" class="calc-button">Hesapla</button>
+            <button id="silButoncm" class="calc-button"><i class="fas fa-trash" style="color: black;"></i></button>
+        </div>
+    
+        <!-- Sonuç gösterilecek div -->
+        <div id="sonucDivcm">
+            <p id="sonuccm"></p>
+        </div>
+    </div>
+             </div> <!-- about content -->
                 </div>
                 <div class="col-lg-6">
                     <div class="about-image text-center mt-50 wow fadeInRightBig" data-wow-duration="1s" data-wow-delay="0.5s">
@@ -803,10 +831,14 @@
     <!--====== Main js ======-->
     <script src="assets/js/main.js"></script>
     
-     <script src="func.js"></script>
-    <script src="islemekle.js"></script>
-    <script src="hesapla.js"></script>
-    <script src="sil.js"></script>
+     <script src="assets/js/func.js"></script>
+    <script src="assets/js/islemekle.js"></script>
+    <script src="assets/js/hesapla.js"></script>
+    <script src="assets/js/sil.js"></script>
+   <!-- bu alt dönüşümler içn -->
+    <script src="assets/js/funccm.js"></script>
+    <script src="assets/js/hesaplacm.js"></script>
+    <script src="assets/js/silcm.js"></script>
 </body>
 
 </html>
