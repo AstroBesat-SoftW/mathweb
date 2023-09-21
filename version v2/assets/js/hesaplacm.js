@@ -167,7 +167,7 @@
         
         else {
             
-            throw new Error('Geçersiz birimler. Desteklenen birimler: metre, kilometre');
+            throw new Error('Geçersiz birimler. Desteklenen birimler: metre, kilometre, santimetre, desimetre, milimetre, hektometre, dekametre');
         }
         
         return sonucDegeri;
