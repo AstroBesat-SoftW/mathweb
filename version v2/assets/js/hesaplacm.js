@@ -168,7 +168,7 @@
 
           
     // Sıvı ölçü birimleri ile ilgili dönüşümler
-    if (birim1 === 'litre' && birim2 === 'mililitre') {
+   else  if (birim1 === 'litre' && birim2 === 'mililitre') {
         sonucDegeri = sayi * 1000; // Litreyi mililitreye çevir
     } 
     else if (birim1 === 'mililitre' && birim2 === 'litre') {
