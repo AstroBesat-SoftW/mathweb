@@ -26,11 +26,34 @@ function soruSor(islem) {
 
      var yanlisCevaplar = [];
     while (yanlisCevaplar.length < 3) {
-        var yanlisCevap = randomNum();
-        if (!yanlisCevaplar.includes(yanlisCevap) && yanlisCevap !== dogruCevap) {
+   //eklediğim şey eğer bölme seçili ve çıktı tam saıdan büyükse yani vürgullüse diğer seçeneklerde virgüllü olsun
+   // kısmı bu
+        if (islem == "/" && dogruCevap >= (sayi1 / sayi2).toFixed(0)) {
+
+       var yanlisCevap = (randomNum() / randomNum()).toFixed(2); 
+
+       if (!yanlisCevaplar.includes(yanlisCevap) && yanlisCevap !== dogruCevap) {
+
             yanlisCevaplar.push(yanlisCevap);
         }
-    }
+
+        }  
+        // eğer bölme seçili değil ve virgüllü değilse normal tam sayı yapsın
+
+        else { 
+        var yanlisCevap = randomNum();
+        if (!yanlisCevaplar.includes(yanlisCevap) && yanlisCevap !== dogruCevap) {
+
+            yanlisCevaplar.push(yanlisCevap);
+        }
+      }
+   }
+
+
+
+
+
+
     yanlisCevaplar = yanlisCevaplar.sort(function () {
         return Math.random() - 0.5; // Yanlış cevapları karıştır
     });
