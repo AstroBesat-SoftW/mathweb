@@ -38,6 +38,12 @@ switch (islem1) {
     case "cm":
         dogruCevap1 = sayi /100;
         break;
+    case "m":
+        dogruCevap1 = sayi *1000;
+        break;
+    case "l":
+        dogruCevap1 = sayi *1000;
+        break;
   
 }
 
@@ -119,9 +125,10 @@ soruSor1("km");
 document.getElementById("cm").addEventListener("click", function () {
 soruSor1("cm");
 });
-
-
-
-
-
-
+document.getElementById("m").addEventListener("click", function () {
+ soruSor1("m");
+ });
+    
+document.getElementById("l").addEventListener("click", function () {
+ soruSor1("l");
+ });
