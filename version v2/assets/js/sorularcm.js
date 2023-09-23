@@ -20,7 +20,7 @@ if (selectedValue1 >= 1) {
 
 
 // Rastgele sayıları oluşturmak için bir yardımcı fonksiyon
-function randomNum() {
+function randomNum2() {
 return Math.floor(Math.random() * islemSonucu1) + 1; // 1 ile 20 arasında rastgele bir sayı üretir
 }
 
@@ -28,7 +28,7 @@ return Math.floor(Math.random() * islemSonucu1) + 1; // 1 ile 20 arasında rastg
 
 // İşlem yapılacak işlem seçildiğinde bu fonksiyon çağrılır
 function soruSor1(islem1) {
-var sayi = randomNum();
+var sayi = randomNum2();
 var dogruCevap1;
 
 switch (islem1) {
@@ -45,7 +45,7 @@ switch (islem1) {
 while (yanlisCevaplar1.length < 3) {
 
     
-    var yanlisCevap1 = randomNum();
+    var yanlisCevap1 = randomNum2();
   
 
      if (!yanlisCevaplar1.includes(yanlisCevap1) && yanlisCevap1 !== dogruCevap1) {
