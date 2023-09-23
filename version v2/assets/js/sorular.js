@@ -50,6 +50,16 @@ function soruSor(islem) {
             } while (dogruCevap % 1 !== 0); // Kesirli sonuçları önlemek için döngüyü kullan
             dogruCevap = (sayi1 / sayi2).toFixed(0); 
             break;
+
+        case "km":
+        
+        dogruCevap = sayi1 *100000;
+        break;
+        
+        case "cm":
+       
+        dogruCevap = sayi1 /100;
+        break;
     }
 
      var yanlisCevaplar = [];
@@ -78,9 +88,30 @@ function soruSor(islem) {
     });
 
     var soruMetni = sayi1 + " " + islem + " " + sayi2 + " = ?";
-   
 
+    if (islem === "km") {
+      // soru metnini değiştirmem gerekli
+       var soruMetni = sayi1 + " " + islem + " --> cm " +  " = ?";
+       yanlisCevaplar[0] = dogruCevap + "0";
+       yanlisCevaplar[1] = dogruCevap + "00";
+       yanlisCevaplar[2] = (dogruCevap / 100000) *10000 ;
+
+    }
+
+     if (islem === "cm") {
+      // soru metnini değiştirmem gerekli
+       var soruMetni = sayi1 + " " + islem + " --> m " +  " = ?";
+       yanlisCevaplar[0] =  (dogruCevap * 100) /10 ;
+       yanlisCevaplar[1] = (dogruCevap * 100) /10000;
+       yanlisCevaplar[2] = (dogruCevap * 100) /1000 ;
+
+    }
+   
+   
+    
     var cevaplar = [yanlisCevaplar[0], yanlisCevaplar[1], yanlisCevaplar[2], dogruCevap];
+
+
     cevaplar = cevaplar.sort(function () {
         return Math.random() - 0.5; // Tüm cevapları karıştır
     });
@@ -99,6 +130,7 @@ function soruSor(islem) {
 }
 
 counter = 0;
+
 // Kullanıcının verdiği cevabı kontrol eden fonksiyon
 function cevapKontrol(verilenCevap, dogruCevap) {
     if (verilenCevap == dogruCevap) {
@@ -140,6 +172,19 @@ document.getElementById("bolme").addEventListener("click", function () {
 });
 
    
+document.getElementById("km").addEventListener("click", function () {
+soruSor("km");
+});
+
+document.getElementById("cm").addEventListener("click", function () {
+soruSor("cm");
+});
+
+
+
+
+
+
 
  
 
